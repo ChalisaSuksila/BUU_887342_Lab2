@@ -17,11 +17,9 @@ public class Rec {
       sumDigits(345) = 12.
       Precondition: n >= 0. */
     public static int sumDigits(int n) {
-	
-	// fill me in
-	
+ 	if (n==0) return 0;
+	return n%10 + sumDigits(n/10);
     }
-	
     /** = a copy of s with to_remove_char removed.
 		Example: removeChar("abeabe", 'e') = "abab". */
 	public static String removeChar(String s, char to_remove_char) {
